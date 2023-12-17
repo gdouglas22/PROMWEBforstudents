@@ -19,7 +19,7 @@
 export default {
   name: 'ChatWindow',
   props: {
-    messages: Array, // Добавляем пропс для передачи сообщений
+    messages: Array, // добавляем пропс для передачи сообщений
   },
   data() {
     return {
@@ -29,9 +29,9 @@ export default {
   },
   methods: {
     sendmessage() {
-      this.$emit('messagewassent', {
-        author: this.username,
-        text: this.messageText,
+      this.$emit('messagewassent', { // создаем ивент для того, чтобы App.vue мог получить данные
+        author: this.username, // отправляем в ивенте данные
+        text: this.messageText, // отправляем в ивенте данные
       });
     },
   },

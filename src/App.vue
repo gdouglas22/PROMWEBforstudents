@@ -44,7 +44,7 @@ export default {
         url: 'https://657483b1b2fbb8f6509c4953.mockapi.io/chat/messages',
         data: {
           author: message.author,
-          text: message.text,
+          text: message.text
         }
       }).then((response) => { // выполняется в случае успешной отправки
         console.log(response);
